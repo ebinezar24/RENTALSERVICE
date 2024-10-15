@@ -1,0 +1,133 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(intro-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed; 
+}
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text h1,
+.intro-text h2 {
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Fade in animation */
+}
+
+.intro-text h1 {
+  animation-delay: 0.5s; /* Delay for h1 */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 39, 39, 0.39);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.intro-text {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px; 
+}
+
+.intro-text h1 {
+  font-size: 57px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: none;
+  padding-top: 17%;
+  color: #ffffff;
+  font-style: italic;
+  transition: transform 2.0s ease; /* Transition for h1 */
+}
+
+.intro-text h2 {
+  transition: transform 1.3s ease; /* Transition for h2 */
+  color: #ffffff !important; /* Ensure h2 is white with !important */
+}
+
+.highlight {
+  color: #ffffff;
+}
+
+.login-btn {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.animated-button {
+  background-color: #5db7a8;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6.5px;
+  font-style: oblique;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for button */
+}
+
+.animated-button:hover {
+  background-color: #04677d;
+  color: white;
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Slide in from above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-text {
+    padding: 10px;
+  }
+  .intro-text h1 {
+    font-size: 36px;
+  }
+  .intro-text h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .intro-text {
+    padding: 5px;
+  }
+  .intro-text h1 {
+    font-size: 24px;
+  }
+  .intro-text h2 {
+    font-size: 14px;
+  }
+}

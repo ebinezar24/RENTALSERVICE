@@ -1,0 +1,86 @@
+/* Productlist.css */
+
+.product-list {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e9f5ff; /* Light blue background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-list-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #165663; /* Dark teal color */
+  margin-bottom: 20px;
+}
+
+.product-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #ffffff; /* White background for cards */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.product-image {
+  width: 120px; /* Increased image size */
+  height: 120px; /* Increased image size */
+  margin-right: 20px;
+  border-radius: 10px;
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-details h3 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 20px; /* Increased font size */
+  color: #001219; /* Darker text color */
+}
+
+.product-details p {
+  margin-bottom: 10px;
+  color: #333; /* Dark gray text */
+}
+
+.product-details button {
+  background-color: #4CAF50; /* Green background */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded button */
+  transition: background-color 0.3s, transform 0.2s; /* Animation */
+}
+
+.product-details button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+  transform: translateY(-2px); /* Lift button on hover */
+}
+
+.add-to-cart {
+  margin-top: 10px;
+}

@@ -1,0 +1,148 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #4f83cc 0%, #a3c4e0 50%, #4d9bc3 100%);
+  min-height: 100vh;
+  color: #000000;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.contact-content h1 {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+.contact-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.get-in-touch {
+  flex-basis: 50%;
+  margin-right: 20px;
+}
+
+.contact-details {
+  flex-basis: 40%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; 
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.animate-slide-up {
+  animation: slideUp 1s ease forwards;
+}
+
+.animate-fade {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .contact-wrapper {
+    padding: 20px;
+  }
+
+  .contact-content {
+    padding: 20px;
+  }
+
+  .contact-content h1 {
+    font-size: 28px;
+  }
+
+  .contact-content p {
+    font-size: 16px;
+  }
+
+  .contact-info-container {
+    flex-direction: column;
+  }
+
+  .get-in-touch,
+  .contact-details {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}
